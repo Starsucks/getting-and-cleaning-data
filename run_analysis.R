@@ -1,9 +1,8 @@
-## 1. Merges the training and the test sets to create one data set.
-
-### set workspace
+## Step 0: set workspace
 if(!file.exists("./CourseProject")) {dir.create("./CourseProject")}
 setwd("./CourseProject")
 
+## 1. Merges the training and the test sets to create one data set.
 ### load the data from files
 features <- read.table("./UCI HAR Dataset/features.txt", header = FALSE) ##imports the features
 activities <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE) ##imports the names of activities
